@@ -1,0 +1,30 @@
+---
+layout: post
+title:      "It's only 2pm?"
+date:       2017-12-01 19:02:37 +0000
+permalink:  its_only_2pm
+---
+
+
+My entire life, I remember checking the time. I've always been meticulous about the hours, the minutes, even dreadfully watching seconds pass. In some instances, this borderling obsessive compulsive habit has proved useful. I'm impressive at managing my schedule. I arrive to pick up friends exactly at the odd minutehand I say I will.
+
+*What time are you coming over?*
+*6:17pm. I'll be there.*
+
+It's like that. It can make a pretty fun game estimating how long it will take for me to finish what I'm doing at home, put on my socks and shoes, start my car and make my way over, barring any disastrous accidents and traffic jams.
+
+However, more often than not, especially in my formative years as a student, I'd found that this dreadful awareness of the mortality stamp to be a reminder of how painfully slow it can go by. Maybe, it was a sign of boredom, maybe it was simply the reality I'd found myself in. Did everyone feel this way? How is it only 2pm? Haven't I been working on this essay for four hours now?
+
+The working world didn't prove to be any better: don't get me wrong; I love my students. I love their curious demeanors that can transform to lifeless looks of boredom in an instant. I love their frustration when it turns into the joy of understanding. They were the best part of teaching. Still, I have to say, class was always a drag, as was prep. Nine hour workdays always felt like eighteen. Did everyone feel this way?
+
+Intensive summer classes working as a test prep teacher where working fourteen hour days became a normal part of daily life led to an early career burnout for me. This amount of extroversion required more energy than I could afford expending to ensure I'd have future emotional and financial stability. Eventually, I came to terms that I needed to find another field that suited my strengths better. I have a lot of brain power, but I need to feel recharged at the end of the day by taking care of my personal life, but coming back home after class made me want to bury myself in a cocoon blanket and shut out all sensory stimulation until I had to head back to the office the next day.
+
+I did what all confused millenials do nowadays: I Googled the answer to my problems. A brief exploration on the search engine for "careers for introverts" brought me to a short list of possibilities. Most of these careers had higher barriers to entry, requiring further traditional studying, Master's degrees, and PhD's. I had already gotten my Bachelor's, and I knew racking on debt was not an option I wanted to take on. Plus, was I really interested in becoming a Mining Geologist? Amongst the list of engineering careers, I landed on "Software Engineer." Hm, that sounds more interesting than the rest. I've always admired those who had the tools to create the products I love and use everyday. Google Maps has been a gamechanger. The days of printing MapQuest directions and hoping for the best are over. Spotify, Skyscanner, and Wealthfront are pretty cool too. Tech was changing how I interact with the world and explore it. I was hooked on the possibilities of creating--of being a part of this changing landscape.
+
+Fumbling through free resources, Stack Overflow, and of course, much more Googling, I clumsily learned the basics of syntax, loops, arrays, and recursion. After a couple of months of keeping at it, I felt more at ease with the programming concepts I was learning. I especially loved using a real world workflow through Flatiron's bootcamp prep course. I'd only be interrupted by the rumbling of my stomach, which was when I noticed an uncanny phenomenon that would happen every time I cracked opened a programming book, repl.it, and/or a code editor.
+
+*It's already 10pm?*
+
+It was then that I knew I had to take the plunge and enroll in the Online Web Developer program with the Flatiron School. Since then, I've used my mastery of time to better schedule in meals, but for once, I know that not everyone feels the way I used to feel about a dragging workday. Find what you love and what captivates you, and time will take care of itself.
+
+
