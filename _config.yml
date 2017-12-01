@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: 10,000 hours later
 header-img: img/home-bg.png
 email: ms.rebeccahong@gmail.com
 copyright_name: rh24
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Documenting a learning journey to proficiency
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  rh24
