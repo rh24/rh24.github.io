@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "It's only 2pm?"
-date:       2017-12-01 19:02:37 +0000
+date:       2017-12-01 14:02:38 -0500
 permalink:  its_only_2pm
 ---
 
 
-My entire life, I remember checking the time. I've always been meticulous about the hours, the minutes, even dreadfully watching seconds pass. In some instances, this borderling obsessive compulsive habit has proved useful. I'm impressive at managing my schedule. I arrive to pick up friends exactly at the odd minutehand I say I will.
+My entire life, I remember checking the time. I've always been meticulous about the hours, the minutes, even dreadfully watching seconds pass. In some instances, this borderline obsessive compulsive habit has proved useful. I'm impressive at managing my schedule. I arrive to pick up friends exactly at the odd minutehand I say I will.
 
 *What time are you coming over?*
 *6:17pm. I'll be there.*
