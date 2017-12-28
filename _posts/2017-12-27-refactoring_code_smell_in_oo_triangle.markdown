@@ -11,7 +11,7 @@ I'll be focusing on my initial solution as compared to the solution code found i
 
 I have to say though, the stark contrast between my initial submission and the repo solution code was most certainly compelling enough to warrant a blog post. I had so much fun reading and breaking down the prettier solution to the lab, and I wanted to document my understanding of it.
 
-![Imgur](https://i.imgur.com/UKBWVm3.png)
+![](https://i.imgur.com/UKBWVm3.png)
 
 
 Avi, in one of his lectures on Object Oriented Programming, talks about this idea of single responsibility principle (SRP) in programming as he prepares to refactor his code example.
@@ -26,7 +26,7 @@ The way I've understood it so far is that code smells when the solution may be w
 
 In light of this information, I noticed right off the bat there was something hideously distasteful about the way I'd named by method arguments. I had explicitly named them `side_one`, `side_two`, and `side_three`, which seemed to make sense at the time, but this explicit naming convention actually makes less sense in retrospect. Pythagoras himself in his theorem uses the letter variables `a`, `b`, and `c` in his equation along with the illustrations to prove his point. In fact, most all geometric proofs utilize uppercase and lowercase letters. Refactoring my method arguments to reflect this sensibility was the first step in eliminating my code smell.
 
-![Imgur](https://i.imgur.com/mWxTqJs.png)
+![](https://i.imgur.com/mWxTqJs.png)
 
 Next, I saw that the repo solution code does something that hadn't even crossed my mind reading the README of the lab. We're instructed to write an instance method `kind` that should confirm whether or not our side arguments can indeed be sides of a triangle based on the mathemetical principles that dictate the laws of triangles. My first thought was to write a massive `if` statement that would execute the following code block if the law of triangles proved true. However, this enormous piece of logic can absolutely be encapsulated by an entirely separate instance method! In this refactoring, we create a new method `validate_triangle`. This would actually be a better practice according to SRP.
 
