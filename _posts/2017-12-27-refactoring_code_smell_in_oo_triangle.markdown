@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      " Refactoring Code Smell in OO Triangle"
-date:       2017-12-28 02:05:35 +0000
+date:       2017-12-27 21:05:36 -0500
 permalink:  refactoring_code_smell_in_oo_triangle
 ---
 
