@@ -6,10 +6,10 @@ permalink:  refactoring_code_smell_in_oo_triangle
 ---
 
 
-I'll be focusing on my initial solution as compared to the solution code found in the learn.co repo for the OO Triangle lab. I've been wondering what to write my next blog post on, mostly because maintaining a technical blog is something that is so foreign to me. My knowledge of blogging only goes as far as angsty middle school Xanga posts and, more recently, a Tumblr account that fills up with reposts from my dashboard of embedded pictures and the occasional existentialist quote. Writing about something I discovered while coding? I've yet to do that beyond pausing video lectures to take note my confusion in a neat little Notes folder in iCloud. Actually publishing those rambling thoughts? This will be my first time.
+I'll be focusing on my initial solution as compared to the solution code found in the learn.co repo for the OO Triangle lab. I've been wondering what to write my next blog post on, mostly because maintaining a technical blog is something that is so foreign to me. My knowledge of blogging only goes as far as angsty middle school Xanga posts and, more recently, a Tumblr account that fills up with reposts from my dashboard of embedded pictures and the occasional existentialist quote. Writing about something I discovered while coding? I've yet to do that beyond pausing video lectures to take note of my confusion in a neat little Notes folder in iCloud. Actually publishing those rambling thoughts? This will be my first time.
 
 
-I have to say though, the stark contrast between my initial submission and the repo solution code was most certainly compelling enough to warrant a blog post. I had so much fun reading and breaking down the prettier solution to the lab, and I wanted to document my understanding of it.
+I have to say though, the stark contrast between my initial submission and the repo solution code was most certainly compelling enough to warrant a blog post. I had so much fun reading and breaking down the prettier solution to the lab, and I wanted to document my understanding of it. Here's my first solution below:
 
 ![](https://i.imgur.com/UKBWVm3.png)
 
