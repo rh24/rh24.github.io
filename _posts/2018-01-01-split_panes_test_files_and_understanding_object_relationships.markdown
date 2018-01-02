@@ -1,13 +1,13 @@
 ---
 layout: post
 title:      "Split Panes, Test Files, and Understanding Object Relationships"
-date:       2018-01-02 00:48:08 +0000
+date:       2018-01-01 19:48:09 -0500
 permalink:  split_panes_test_files_and_understanding_object_relationships
 ---
 
 
->Ever since I started the section on Object Oriented Ruby, I'd been struggling with understanding object relationships. Looking back on it as I'm about to start my CLI Data Gem project, if you're reading this and are in a similar position, I implore you to take heart and keep at it because there is light at the end of the confusion ridden tunnel. A few tips:
->
+Ever since I started the section on Object Oriented Ruby, I'd been struggling with understanding object relationships. Looking back on it as I'm about to start my CLI Data Gem project, if you're reading this and are in a similar position, I implore you to take heart and keep at it because there is light at the end of the confusion ridden tunnel. A few tips:
+
 **1. Take notes on the lessons and lecture videos.**
 I received this tip from my program mentor when I asked her for ways I can absorb the information I'll be learning. I have to say, it is immensely helpful. It's true what they say that you're made aware of the gaps in your knowledge once you have to verbalize it, or explain it, in some way. In teaching, we call this declarative knowledge, whereas procedural knowledge would be knowing *how* to do something without necessarily being able to describe how or why it works. I strive to be comprehensively knowledgeable about programming, so notetaking has been really helpful in formulating in my own sentences why the concepts I've learned work the way they do.
 
