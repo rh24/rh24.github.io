@@ -23,7 +23,7 @@ What really solidified this concept for me was dissecting my test file and drawi
 
 For example, below is a screenshot of the `ruby-objects-has-many-lab-v-000` in which I try to break down the `add_song` method.
 
-![](https://imgur.com/a/E6KDd)
+[Imgur](https://i.imgur.com/te3sZ25.png)
 
 The test in the lefthand pane creates a song instance `hello = Song.new("Hello")` and passes it in to `add_song(song)` which is being called on an `Artist` instance `adele`. Now, one way in which we create a relationship between `Song` and `Artist` classes is by setting `song.artist =` to `self`, which in this specific test would be
 
