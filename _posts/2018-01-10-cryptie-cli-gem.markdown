@@ -22,7 +22,7 @@ What probably added to the excitement for me was that the data was being scraped
 
 **Tips:**
 
-***1. DO NOT forget to commit everything to your github repo as the project outline indicates--early and often.***
+**1. DO NOT forget to commit everything to your github repo as the project outline indicates--*early and often.***
 
 I ran into an unsettling issue with my project when I was much further along and stood much more to lose had I not already pushed my last working code up to my github repo. I ended up having to scrap a lot of what I wrote after my last commit because I was working in an old draft that had more breaks in it than was worth fixing. I settled on copy and pasting my most updated version and extending my code from there, but the whole situation would have been better avoided completely.
 
@@ -31,7 +31,7 @@ When I get carried away, I can be a bit of a disorganized directory, tab, and at
 **Note to self:** please delete stale directories and duplicate repositories, so you're not making this mistake again.
 
 
-***2. Watch the entire lesson video on how to set up the CLI gem before you start.***
+**2. Watch the entire lesson video on how to set up the CLI gem before you start.**
 
 Perhaps, similar to my self noted disorganization comment, this is something that only needs to be suggested to the silly, excitement fueled student like me, but please, watch the whole video of Avi setting up his `DailyDeal` gem before you begin to code along. He plays around with his code and thinks out loud, which is really cool because it's *always* cool observing someone's thought process in action. Unfortunately, this also means that if you're pausing the video and coding the same things as he is, you'll also run into the myriad of errors along the way.  This can be a little frustrating, especially if your immediate reaction is to dive headfirst into debugging rather than continuing along with the video, trusting that it will explain what to do next. It will save you a lot of headache in trying to figure out how to require what in your program if you wait until Avi reaches a working way to do it. Meanwhile, as you watch, soak in the information and digest it. Then, try it on your own. Personally, I spent too much time being bogged down by `require_relative` errors at the very start of my project.
 
