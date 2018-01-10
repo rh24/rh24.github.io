@@ -20,7 +20,7 @@ Eventually, I settled on saving the `Cryptie::CLI.new` to an empty array `@@all 
 
 What probably added to the excitement for me was that the data was being scraped from a live site, so depending on the times I exited and re-started the program, my output would differ. Additionally, the `order` function in my program is actually something I have to check out sites like CoinGecko for. The process of navigating to the site, then to each coin, and then to the calculator feels long and drawn out. Typing input straight into my terminal is a process I find much less clunky. It feels good to create something in which I find practical use, even if it might only be me enjoying `cryptie` when all is said and done.
 
-### **Small tips:**
+**Tips:**
 
 ***1. DO NOT forget to commit everything to your github repo as the project outline indicates--early and often.***
 
