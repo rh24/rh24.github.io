@@ -102,8 +102,9 @@ patch '/trades/:id' do
   # Below lines will recreate a UserYear row reflect the new params[:date] input
   # while deleting the old date directly in trades/edit.erb
   # in order to update `Years Active: ` in users/private_show.erb
-  trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
-  useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
+
+trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
+useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
 
 if trade.save
   redirect "/trades/#{trade.id}"
