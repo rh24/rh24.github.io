@@ -65,22 +65,23 @@ Even though my `Trade` class validates input via `validates_presence_of`, and al
 
 ```
 post '/trades' do
-  trade = current_user.trades.build(params)
-	if trade.save
-    trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
-    useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
-    redirect to '/trades'
-  else
-    flash[:message] = "Please, fill out fields with valid inputs."
-    redirect to '/trades/new'
-  end
-	
-	need_valid_input = [params[:coin], params[:quantity], params[:fiat_symbol], params[:buy_value_fiat], params[:sell_value_fiat], params[:viewable], params[:date]]
+trade = current_user.trades.build(params)
+if trade.save
+trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
+useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
+redirect to '/trades'
+else
+flash[:message] = "Please, fill out fields with valid inputs."
+redirect to '/trades/new'
+end
 
-  if need_valid_input.include?("")
-	  flash[:message] = "Please, fill out fields with valid inputs."
-    redirect to '/trades/new'
-  end
+need_valid_input = [params[:coin], params[:quantity], params[:fiat_symbol],
+params[:buy_value_fiat], params[:sell_value_fiat], params[:viewable], params[:date]]
+
+if need_valid_input.include?("")
+flash[:message] = "Please, fill out fields with valid inputs."
+redirect to '/trades/new'
+end
 end
 
 ```
