@@ -87,7 +87,7 @@ end
 ```
 
 Ultimately, I ended up with a product that renders a User Profile page like so:
-![](https://imgur.com/a/uulqJ)
+![](https://i.imgur.com/kv8vTxD.png)
 
 One of the more challening problems I stewed over for this project was how I'd update my `UserYear` table to reflect a change in a user's trade log. As an example, the image above showing the User Page displays that I made this trade in 2018. I wanted to know what would happen if I edited my trade's date to a day in 2017 instead of 2018. Would my Years Active: still show that I traded in 2018, even if I didn't have any other logs in that year?
 
@@ -104,13 +104,13 @@ patch '/trades/:id' do
   # in order to update `Years Active: ` in users/private_show.erb
   trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
   useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
-	
-	if trade.save
-    redirect "/trades/#{trade.id}"
-  else
-    flash[:message] = "Please, fill out fields with valid inputs."
-    redirect "/trades/#{trade.id}/edit"
-  end
+
+if trade.save
+  redirect "/trades/#{trade.id}"
+else
+  flash[:message] = "Please, fill out fields with valid inputs."
+  redirect "/trades/#{trade.id}/edit"
+end
 end
 
 ```
@@ -123,10 +123,10 @@ My first step was to delete the `UserYear` row that indicated a trade made in 20
 ```
 
 Now, if I wanted to change my trade to a date in 2017:
-![](https://imgur.com/a/kLOxz)
+![](https://i.imgur.com/TYsTk1l.png)
 
 This edit will show up in my User Profile page, in addition to updating the Years Active: section.
-![](https://imgur.com/a/EelU8)
+![](https://i.imgur.com/ME6mRIj.png)
 
 I'm looking forward to building more and sharpening my understanding of CRUD apps and Rack requests. If you want a closer look at Trade Tracker, check out the respository [here](https://github.com/rh24/tradetracker-sinatra-app)!
 
