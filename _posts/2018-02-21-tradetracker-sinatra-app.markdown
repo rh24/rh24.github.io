@@ -83,7 +83,10 @@ Even though my `Trade` class validates input via `validates_presence_of`, and al
       redirect to '/trades/new'
     end
   end
+	
 	```
+
+
 
 Ultimately, I ended up with a product that renders a User Profile page like so:
 ![](https://imgur.com/a/uulqJ)
@@ -91,6 +94,7 @@ Ultimately, I ended up with a product that renders a User Profile page like so:
 One of the more challening problems I stewed over for this project was how I'd update my `UserYear` table to reflect a change in a user's trade log. As an example, the image above showing the User Page displays that I made this trade in 2018. I wanted to know what would happen if I edited my trade's date to a day in 2017 instead of 2018. Would my Years Active: still show that I traded in 2018, even if I didn't have any other logs in that year?
 
 Testing this question, showed that yes, it would. I needed to update my UserYear table to reflect the patch request for my trade.
+
 
 ```
 patch '/trades/:id' do
