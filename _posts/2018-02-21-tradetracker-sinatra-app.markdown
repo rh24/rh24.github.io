@@ -64,7 +64,6 @@ Here, is the form with which a user would log a trade:
 Even though my `Trade` class validates input via `validates_presence_of`, and although this is useful when testing out objects and object relationships in the console, if a user simply leaves a field blank, the `params` hash will still create a value of an empty string `""` for each indicated key via `name=` inputs in a form. Extra sanitation is absolutely necessary! I accomplished this by creating an array of `params` values that I did not want to be an empty string. The only field I wanted to be left optionally 'blank' was the Notes: section.
 
 ```
-
 post '/trades' do
   trade = current_user.trades.build(params)
 	if trade.save
@@ -77,9 +76,9 @@ post '/trades' do
   end
 	
 	need_valid_input = [params[:coin], params[:quantity], params[:fiat_symbol], params[:buy_value_fiat], params[:sell_value_fiat], params[:viewable], params[:date]]
-	
-	if need_valid_input.include?("")
-    flash[:message] = "Please, fill out fields with valid inputs."
+
+  if need_valid_input.include?("")
+	  flash[:message] = "Please, fill out fields with valid inputs."
     redirect to '/trades/new'
   end
 end
