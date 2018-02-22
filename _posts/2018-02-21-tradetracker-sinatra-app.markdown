@@ -98,9 +98,10 @@ Testing this question, showed that yes, it would. I needed to update my UserYear
 patch '/trades/:id' do
   trade = Trade.find(params[:id])
   trade.update(coin: params[:coin], quantity: params[:quantity], buy_value_fiat: params[:buy_value_fiat], sell_value_fiat: params[:sell_value_fiat], date: params[:date], viewable: params[:viewable], notes: params[:notes])
-# Below lines will recreate a UserYear row reflect the new params[:date] input
-# while deleting the old date directly in trades/edit.erb
-# in order to update `Years Active: ` in users/private_show.erb
+	
+  # Below lines will recreate a UserYear row reflect the new params[:date] input
+  # while deleting the old date directly in trades/edit.erb
+  # in order to update `Years Active: ` in users/private_show.erb
   trade_year = Year.find_or_create_by(year: params[:date][0..4].to_i)
   useryear = UserYear.find_or_create_by(user_id: current_user.id, year_id: trade_year.id)
 	
