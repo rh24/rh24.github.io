@@ -5,13 +5,13 @@ date:       2018-02-21 21:11:04 -0500
 permalink:  tradetracker-sinatra-app
 ---
 
-##### It feels like I've come such a long way from the Object Oriented Ruby units of the curriculum. Since then, we've covered ORMs, ActiveRecord, Rack, and Sinatra, which brings me here to talk about my Sinatra Portfolio project.
+It feels like I've come such a long way from the Object Oriented Ruby units of the curriculum. Since then, we've covered ORMs, ActiveRecord, Rack, and Sinatra, which brings me here to talk about my Sinatra Portfolio project.
 
-##### I felt that the labs and Fwitter project leading up to this assignment adequately prepared me to build my own web app from scratch. Similar to my CLI data gem project, it helped motivation wise to pick a project that I'd find personally useful, so I built a simple trade tracking app that allows users to log trades they've made throughout the year/years past.
+I felt that the labs and Fwitter project leading up to this assignment adequately prepared me to build my own web app from scratch. Similar to my CLI data gem project, it helped motivation wise to pick a project that I'd find personally useful, so I built a simple trade tracking app that allows users to log trades they've made throughout the year/years past.
 
-##### Additionally, I wanted to create the option of making publicly visible profiles along with publicly and privately visible trades.
+Additionally, I wanted to create the option of making publicly visible profiles along with publicly and privately visible trades.
 
-##### As an aside, I'm really feeling the use of my github repo names as the title of my blog posts on the projects. I did this by creating a column in my `create_trades` migration called `viewable` that would take in a boolean value, with its default value being false.
+As an aside, I'm really feeling the use of my github repo names as the title of my blog posts on the projects. I did this by creating a column in my `create_trades` migration called `viewable` that would take in a boolean value, with its default value being false.
 
 ```
 class CreateTrades < ActiveRecord::Migration[5.1]
@@ -56,12 +56,12 @@ end
 
 ```
 
-##### The above migrations allowed me to relationally map these table to my `Year` class and `User` class, respectively.
+The above migrations allowed me to relationally map these table to my `Year` class and `User` class, respectively.
 
-##### Here, is the form with which a user would log a trade:
+Here, is the form with which a user would log a trade:
 ![](https://imgur.com/CGLa6vX)
 
-##### Even though my `Trade` class validates input via `validates_presence_of`, and although this is useful when testing out objects and object relationships in the console, if a user simply leaves a field blank, the `params` hash will still create a value of an empty string `""` for each indicated key via `name=` inputs in a form. Extra sanitation is absolutely necessary! I accomplished this by creating an array of `params` values that I did not want to be an empty string. The only field I wanted to be left optionally 'blank' was the Notes: section.
+Even though my `Trade` class validates input via `validates_presence_of`, and although this is useful when testing out objects and object relationships in the console, if a user simply leaves a field blank, the `params` hash will still create a value of an empty string `""` for each indicated key via `name=` inputs in a form. Extra sanitation is absolutely necessary! I accomplished this by creating an array of `params` values that I did not want to be an empty string. The only field I wanted to be left optionally 'blank' was the Notes: section.
 
 ``` 
   post '/trades' do
@@ -82,18 +82,16 @@ end
       flash[:message] = "Please, fill out fields with valid inputs."
       redirect to '/trades/new'
     end
-  end
-	
-	```
+  end```
 
 
 
-##### Ultimately, I ended up with a product that renders a User Profile page like so:
+Ultimately, I ended up with a product that renders a User Profile page like so:
 ![](https://imgur.com/a/uulqJ)
 
-##### One of the more challening problems I stewed over for this project was how I'd update my `UserYear` table to reflect a change in a user's trade log. As an example, the image above showing the User Page displays that I made this trade in 2018. I wanted to know what would happen if I edited my trade's date to a day in 2017 instead of 2018. Would my Years Active: still show that I traded in 2018, even if I didn't have any other logs in that year?
+One of the more challening problems I stewed over for this project was how I'd update my `UserYear` table to reflect a change in a user's trade log. As an example, the image above showing the User Page displays that I made this trade in 2018. I wanted to know what would happen if I edited my trade's date to a day in 2017 instead of 2018. Would my Years Active: still show that I traded in 2018, even if I didn't have any other logs in that year?
 
-##### Testing this question, showed that yes, it would. I needed to update my UserYear table to reflect the patch request for my trade.
+Testing this question, showed that yes, it would. I needed to update my UserYear table to reflect the patch request for my trade.
 
 
 ```
@@ -117,17 +115,17 @@ patch '/trades/:id' do
   end
 	```
 
-##### My first step was to delete the `UserYear` row that indicated a trade made in 2018. I did this with the following code directly in my `trades/edit.erb` form.
+My first step was to delete the `UserYear` row that indicated a trade made in 2018. I did this with the following code directly in my `trades/edit.erb` form.
 
 ```
 <% UserYear.where(year_id: Year.where(year: @trade.date[0..4].to_i)).destroy_all %>
 ```
 
-##### Now, if I wanted to change my trade to a date in 2017:
+Now, if I wanted to change my trade to a date in 2017:
 ![](https://imgur.com/a/kLOxz)
 
-##### This edit will show up in my User Profile page, in addition to updating the Years Active: section.
+This edit will show up in my User Profile page, in addition to updating the Years Active: section.
 ![](https://imgur.com/a/EelU8)
 
-##### I'm looking forward to building more and sharpening my understanding of CRUD apps and Rack requests. If you want a closer look at Trade Tracker, check out the respository [here](https://github.com/rh24/tradetracker-sinatra-app)!
+I'm looking forward to building more and sharpening my understanding of CRUD apps and Rack requests. If you want a closer look at Trade Tracker, check out the respository [here](https://github.com/rh24/tradetracker-sinatra-app)!
 
