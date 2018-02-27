@@ -5,13 +5,15 @@ date:       2018-02-21 21:11:04 -0500
 permalink:  tradetracker-sinatra-app
 ---
 
-It feels like I've come such a long way from the Object Oriented Ruby units of the curriculum. Since then, we've covered ORMs, ActiveRecord, Rack, and Sinatra, which brings me here to talk about my Sinatra Portfolio project.
+Opening up with an aside, I'm really feeling the use of my github repo names as the title of my blog posts on the projects! Coming up with creative blog post titles is more challenging on execution. It helps to be literal. Haha.
+
+Thoughts and feelings about the Sinatra unit: It feels like I've come such a long way from the Object Oriented Ruby units of the curriculum. Since then, we've covered ORMs, ActiveRecord, Rack, and Sinatra, which brings me here to talk about my Sinatra Portfolio project.
 
 I felt that the labs and Fwitter project leading up to this assignment adequately prepared me to build my own web app from scratch. Similar to my CLI data gem project, it helped motivation wise to pick a project that I'd find personally useful, so I built a simple trade tracking app that allows users to log trades they've made throughout the year/years past.
 
 Additionally, I wanted to create the option of making publicly visible profiles along with publicly and privately visible trades.
 
-As an aside, I'm really feeling the use of my github repo names as the title of my blog posts on the projects. I did this by creating a column in my `create_trades` migration called `viewable` that would take in a boolean value, with its default value being false.
+I did this by creating a column in my `create_trades` migration called `viewable` that would take in a boolean value, with its default value being false.
 
 ```
 class CreateTrades < ActiveRecord::Migration[5.1]
