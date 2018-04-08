@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "spend-it-here rails app"
-date:       2018-04-08 00:40:29 +0000
+title:      "spend-it-here-rails-app"
+date:       2018-04-07 20:40:30 -0400
 permalink:  spend-it-here_rails_app
 ---
 
