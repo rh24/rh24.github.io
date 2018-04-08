@@ -59,10 +59,10 @@ class Business < ApplicationRecord
   validates :name, presence: true
   validates :description, presence: true
 	
-	  def location_attributes=(location_attributes)
-      self.location = Location.find_or_create_by(location_attributes) if !location_attributes.values.include?("") && !self.location_id
-      save
-    end
+	def location_attributes=(location_attributes)
+    self.location = Location.find_or_create_by(location_attributes) if !location_attributes.values.include?("") && !self.location_id
+    save
+  end
 
     def crypto_attributes=(crypto_ids)
       crypto_ids.values.first.reject { |value| value.to_s.empty? }.each do |id|
