@@ -8,9 +8,9 @@ permalink:  spend-it-here_rails_app
 
 Up until now I've built a CLI gem that scrapes CoinMarketCap.com and a logging app in Sinatra designed to track cryptocurrency trades. For my Rails app, I wanted to follow this theme of cryptocurrency but focus on my favorite aspect of the scene: adoption.
 
-I get very excited envisioning a future in which there exists a self-sustaining ecosystem of businesses, individuals, and communities that exchange the value of their goods and services entirely in cryptocurrency. Seeing as how adoption is stil in its infancy, as are many of the projects in cryptocurrency space, I wanted to develop an easy way for users to find out where they can spend their coins/tokens.
+I get very excited envisioning a future in which there exists a self-sustaining ecosystem of businesses, individuals, and communities that exchange the value of their goods and services entirely in cryptocurrency. Seeing as how adoption is stil in its infancy, as are many of the projects in the cryptocurrency space, I wanted to develop an easy way for users to find out where they can spend their coins/tokens.
 
-There  are undeniable deterrents for consumers to spend in cryptocurrency. For example, the U.S. government views crypto as an asset, thus, leaving consumers liable to a capital gains tax at time of transaction/sale. Additionally, crypto, currently, is wildly volatile, which can make it impractical for both businesses to accept it and for users to spend it).
+There  are undeniable deterrents for consumers to spend in cryptocurrency. For example, the U.S. government views crypto as an asset, thus, leaving consumers liable to a capital gains tax at time of transaction/sale. Additionally, crypto, currently, is wildly volatile, which can make it impractical for both businesses to accept it and for users to spend it.
 
 Yet, there are the brave few who do it anway!
 
@@ -85,7 +85,7 @@ which will render this page in the browser:
 Since businesses belong to a category, I've created a categories index to make it easier to search for consumer needs:
 ![categories index](https://i.imgur.com/t9BK6hx.png)
 
-Last but not least, it's possible to route to `/revews`, which will lead to an index of all reviews ever created, or a user can simply go to their reviews via `/users/:id`:
+Last but not least, it's possible to route to `/reviews`, which will lead to an index of all reviews ever created, or a user can simply go to their reviews via `/users/:id`:
 ![user show page](https://i.imgur.com/vsXmXIj.png)
 
 There's some silly data in there, but that unhappy customer's CVS review is legit. Got that off of yelp.
@@ -94,6 +94,6 @@ I found it hilarious that it just so happened to be a review about botched EOS c
 
 ### Conclusion:
 
-I'm really excited to continue working on this app! I still have to work out the kinks for Google OAuth2, which I plan on working out tomorrow. All in all, I can see this app developing into a fun little passion project. I recently discovered Heroku, so maybe I'll go ahead an deploy it after I learn how to apply a more presentable front-end. Hehe.
+I'm really excited to continue working on this app. I still have to work out the kinks for Google OAuth2, which I plan on working out tomorrow. All in all, I can see this app developing into a fun little passion project. I recently discovered Heroku, so maybe I'll go ahead an deploy it after I learn how to apply a more presentable front-end. Hehe.
 
 [Here's the link to the repo!](https://github.com/rh24/spend-it-here-rails-app)
