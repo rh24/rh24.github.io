@@ -10,7 +10,7 @@ Up until now I've built a CLI gem that scrapes CoinMarketCap.com and a logging a
 
 I get very excited envisioning a future in which there exists a self-sustaining ecosystem of businesses, individuals, and communities that exchange the value of their goods and services entirely in cryptocurrency. Seeing as how adoption is stil in its infancy, as are many of the projects in the cryptocurrency space, I wanted to develop an easy way for users to find out where they can spend their coins/tokens.
 
-There  are undeniable deterrents for consumers to spend in cryptocurrency. For example, the U.S. government views crypto as an asset, thus, leaving consumers liable to a capital gains tax at time of transaction/sale. Additionally, crypto, currently, is wildly volatile, which can make it impractical for both businesses to accept it and for users to spend it.
+There  are undeniable deterrents for consumers to spend in cryptocurrency. For example, the U.S. government views crypto as an asset, thus, leaving consumers liable to a capital gains tax calculated from acquisition to time of transaction/sale. Additionally, crypto, currently, is wildly volatile, which can make it impractical for both businesses to accept it and for users to spend it. The value the assets once had on one day may carry 70% less of its purchasing power by week's end.
 
 Yet, there are the brave few who do it anway!
 
@@ -94,6 +94,6 @@ I found it hilarious that it just so happened to be a review about botched EOS c
 
 ### Conclusion:
 
-I'm really excited to continue working on this app. I still have to work out the kinks for Google OAuth2, which I plan on working out tomorrow. All in all, I can see this app developing into a fun little passion project. I recently discovered Heroku, so maybe I'll go ahead an deploy it after I learn how to apply a more presentable front-end. Hehe.
+I'm really excited to continue working on this app. I still have to work out the kinks for Google OAuth2, which I plan on working out tomorrow. For now, Spend It Here is using GitHub's omniauth, but I look forward to familiarizing myself with more authentication protocols in the future. All in all, I can see this app developing into a fun little passion project. I recently discovered Heroku, so maybe I'll go ahead an deploy it after I learn how to apply a more presentable front-end. Hehe.
 
 [Here's the link to the repo!](https://github.com/rh24/spend-it-here-rails-app)
