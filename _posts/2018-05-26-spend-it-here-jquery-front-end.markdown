@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "spend-it-here-jquery-front-end"
-date:       2018-05-26 21:22:27 +0000
+date:       2018-05-26 17:22:28 -0400
 permalink:  spend-it-here-jquery-front-end
 ---
 
@@ -41,8 +41,8 @@ I found the application of this solutions to be useful in subchunking my array o
 
 Here's the snippet of this prototype function in action:
 
-![load-comments](https://i.imgur.com/ynSwck8.gifv)
-
+![load-comments](https://imgur.com/ynSwck8)
+[load-comments](https://i.imgur.com/ynSwck8.gifv)
 
 And, here's the code:
 
