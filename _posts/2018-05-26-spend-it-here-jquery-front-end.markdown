@@ -41,8 +41,7 @@ I found the application of this solutions to be useful in subchunking my array o
 
 Here's the snippet of this prototype function in action:
 
-![load-comments](https://imgur.com/ynSwck8)
-[load-comments](https://i.imgur.com/ynSwck8.gifv)
+![load-comments](https://i.imgur.com/ynSwck8.gifv)
 
 And, here's the code:
 
