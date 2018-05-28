@@ -33,7 +33,7 @@ function subChunks(arr, n) {
 	return chunks;
 }
 
-subChunks(array, 3)  //=> [[boat, terrace, island], [jungle, sand, 1], [2, 3, magic], [canyons, coyote, 4], [5, 6]]
+subChunks(array, 3)  //=> [['boat', 'terrace', 'island'], ['jungle', 'sand', 1], [2, 3, 'magic'], ['canyons', 'coyote', 4], [5, 6]]
 
 ```
 
