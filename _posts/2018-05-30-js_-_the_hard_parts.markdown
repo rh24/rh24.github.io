@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JS - The Hard Parts"
-date:       2018-05-30 18:07:11 +0000
+date:       2018-05-30 14:07:12 -0400
 permalink:  js_-_the_hard_parts
 ---
 
@@ -139,7 +139,7 @@ const unnamedFunc = () => {
 }
 
 const namedFunc = function myFunc() {
-  console.log('named sa ved to variable.')
+  console.log('named saved to variable.')
 }
 
 const unnamedNonArrow = function() {
