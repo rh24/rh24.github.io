@@ -96,7 +96,7 @@ myNameIs(); //=> 'my name is Rebecca.'
 myNameIsStill(); //=> 'my name is still Rebecca.'
 ```
 ## const vs let
-1. ```const``` cannot be reassigned. ```let``` can be reassigned.
+* ```const``` cannot be reassigned. ```let``` can be reassigned.
 
 A common misconcspetion about ```const``` is that its value is immutable. This is not true! ```const``` is simply used when the variable is not to be rebound, meaning that if the value is an object, we cannot reassign the value to be an array. Additionally, we cannot overwrite the original contents of ```const``` through reassignment, meaning we cannot simply try to change const by making it equal to another object. However, we can certainly add to its datatype and change its values by accessing its original assignment. ```let```, on the other hand, may be completely reassigned and mutated.
 
@@ -123,7 +123,7 @@ obj.lastName = 'hong'
 console.log(obj) // { firstName: 'rebecca', lastName: 'hong', type: 'human' }
 ```
 
-2. ```const``` must be initialized upon declaration. It cannot be declared without an assignment, while let can.
+* ```const``` must be initialized upon declaration. It cannot be declared without an assignment, while let can.
 ```
 const unassigned; // SyntaxError: Unexpected token
 let unassigned; //=> undefined
@@ -154,7 +154,7 @@ function declaredFunc() {
   console.log('my function declaration prints because it's hoisted.')
 }
 ```
-The first three examples are saved to a `const`. They are known as function expressions. Because function expressions are not hoisted, invoking them will result in a `TypeError`.
+The first three examples are saved to a `const`. They are known as function expressions. Because function expressions are not hoisted, invoking them before the `const` assignments are stored into memory will result in a `TypeError`.
 
 ### () => 'Arrow functions'
 
