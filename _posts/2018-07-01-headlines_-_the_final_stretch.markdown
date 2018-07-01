@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "headlines - the final stretch"
-date:       2018-07-01 20:15:06 +0000
+date:       2018-07-01 16:15:07 -0400
 permalink:  headlines_-_the_final_stretch
 ---
 
@@ -121,7 +121,7 @@ Pretty cool! Feel free to check out the rest of the code. I'd be happy to collab
 
 ### Challenges
 
-I think the challenging part of this was convincing myself to allow some flexibility in what can be has to be a container and what has to be a component. I'd found along the lines that some of my components that I'd planned for to be stateless might be better of being stateful so that event handlers wouldn't get too lost in props or that so I can map state to props. It really depended on how I wanted to user to be able to interact with my app. This is really only something I figured out the more I played around with what I'd built and running into bugs.
+I think the challenging part of this was convincing myself to allow some flexibility in what can be has to be a container and what has to be a component. I'd found along the lines that some of my components that I'd planned for to be stateless might be better off being stateful so that I can map state to props. It really depended on how I wanted to user to be able to interact with my app. This is only something I figured out the more I played around with what I'd built and the more I ran into bugs.
 
 All in all, I'm really excited to keep building upon what the solutions I've come up with. I'm even more excited to see how others have been leveraging React/Redux in their own personal projects!
 
