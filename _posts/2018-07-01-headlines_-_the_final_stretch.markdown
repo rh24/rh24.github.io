@@ -7,9 +7,9 @@ permalink:  headlines_-_the_final_stretch
 
 I was so excited to learn React/Redux in spite of what I've heard of this section of Learn to be more difficult to digest. This enthusiasm definitely helped me learn the material well enough to feel comfortable with implementing a variety of solutions and seeing what works.
 
-For my final project, I wanted to work with a well documented external API, and then, model its persistence to similarly constructed attributes in my rails own rails models. I chose to work with the News API, which is a conglomeration of online media resources bunled into one. I had fun playing around with the parameters, and I based the features of my applications around the clearest parameters available to me.
+For my final project, I wanted to work with a well documented external API, and then, model its persistence to similarly constructed attributes in my own rails models. I chose to work with the News API, which is a conglomeration of online media resources bundled into one. I had fun playing around with the parameters, and I based the features of my applications around the clearest parameters available to me.
 
-I'm fascinated by the performant nature of the React/Redux libraries. I have to admit that until now, I've never wanted to learn more about front end development, but it seems that with React, the possibilities are endless. The reusability of the code is amazing. The single most important part of my process was the planning stage. I drew a layout of what I wanted my app to look like, and then, I based my components on the resulting image.
+I'm fascinated by the performant nature of the React/Redux libraries. I have to admit that until now, I've never wanted to learn more about front-end development, but it seems that with React, the possibilities are endless. The reusability of the code is amazing. The single most important part of my process was the planning stage. I drew a layout of what I wanted my app to look like, and then, I based my components on the resulting image.
 
 Because I had planned in advance which components would be stateful containers and which would be children, stateless function components, I found that once I had a good handle on my app architecture, I was ready to move on to my favorite part of this project:
 
